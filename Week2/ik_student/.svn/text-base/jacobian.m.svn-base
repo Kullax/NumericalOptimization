@@ -1,0 +1,26 @@
+function [ J ] = jacobian( links, angles, tool )
+% JACOBIAN -- The jacobian function
+% input:
+%     links   : A matrix of fixed rod-link vectors
+%     angles : A vector with joint angles
+%     tool      : Position/vector (specified in homogenuous coordinates)
+% output
+%     J : The Jacobian matrix
+if nargin < 3
+    tool = [0.0;  0.0; 1.0];
+end
+
+N = length(angles);  % Number of joints/links in chain
+J = zeros(N,3);
+for i=N:-1:1
+    
+   %
+   % TODO
+   %
+   %   Add your own code for comuting the Jacobian 
+   %
+   % 
+   % J(:,i) = ???;
+   %
+end
+end
